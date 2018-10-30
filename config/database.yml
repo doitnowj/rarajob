@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: rarajab_production
-  username: rarajab
-  password: <%= ENV['RARAJAB_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= Rails.application.credentials.DB_PASSWORD_PRODUCTION %>
+  socket: /var/lib/mysql/mysql.sock
