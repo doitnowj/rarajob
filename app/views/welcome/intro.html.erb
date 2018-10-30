@@ -1,0 +1,182 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-ccc">
+  <div class="container">
+    <a class="navbar-brand rarajob-logo bg-ccc" href="<%= root_path %>" style="">&nbsp;</a>
+  </div>
+</nav>
+
+<section id="brand-panel-pre" class="bg-ccc"></section>
+
+<section id="sec-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 left">
+        <p class="mb-0 f-44 c-pink title bg-ccc"></p>
+        <p class="mb-5 title-msg bg-ccc"></p>
+
+        <div class="row">
+          <div class="col-md-8">
+            <div class="button-group">
+              <a href="https://goo.gl/forms/fJcKyGqWAw8wKhPn2" class="btn-for_undergraduate bg-ccc"></a>
+              <a href="https://goo.gl/forms/zTUQ1gqYzmrKkKbF3" class="btn-for_graduated bg-ccc"></a>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+      <div class="col-md-6 right">
+        <div class="bg-ccc right-img"></div>
+      </div>
+    </div>
+  </div>
+  <img class="wave-img-mobile" src="/references/rarajob_files/rarajob_mobile/source/body2/wave.png" alt="">
+</section>
+
+<section id="sec-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 feature left">
+        <img src="/references/rarajob_files/rarajob_desktop/source/body2/vector_1.png">
+        <div>
+          <p class="bg-ccc"></p>
+        </div>
+      </div>
+      <div class="col-md-4 feature center">
+        <img src="/references/rarajob_files/rarajob_desktop/source/body2/vector_2.png">
+        <div>
+          <p class="bg-ccc"></p>
+        </div>
+      </div>
+      <div class="col-md-4 feature right">
+        <img src="/references/rarajob_files/rarajob_desktop/source/body2/vector_3.png">
+        <div>
+          <p class="bg-ccc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img class="wave-img" src="/references/rarajob_files/rarajob_desktop/source/body2/wave.png" alt="">
+</section>
+
+<section id="sec-3">
+  <div class="container-fluid">
+    <div class="row my-5">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 my-5 px-0">
+        <img class="kakao-img" src="/references/rarajob_files/rarajob_desktop/source/body3/kakao.png" style="width: 100%;">
+        <div class="bg-ccc bg-clock position-absolute" style="background-image: url(/references/rarajob_files/rarajob_desktop/source/body3/vector_bg.png)"></div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <img class="kakao-text mb-5" src="/references/rarajob_files/rarajob_desktop/source/body3/kakao_text_1.png">
+        <img class="kakao-text-mobile mb-5" src="/references/rarajob_files/rarajob_mobile/source/body3/kakao_text_1.png">
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript" charset="utf-8">
+    function copyToClipboard() {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(location.href).select();
+      document.execCommand("copy");
+      $temp.remove();
+      swal("링크를 복사했습니다!", '', 'success');
+    }
+  </script>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 mb-4">
+        <div class="button-group mb-4">
+          <a id="kakao-link-btn" href="javascript:void(0)" class="btn-kakao btn-kakao1 bg-ccc"></a>
+          <a href="javascript:void(0)" class="btn-kakao btn-kakao2 bg-ccc" onclick="copyToClipboard('#p1')"></a>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-ccc py-4">
+  <div class="container py-5">
+    <div class="row px-5">
+      <div class="col-md-4">
+        <img src="/references/rarajob_files/rarajob_desktop/source/footer/footer_logo.png" width="150">
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-9 text-right">
+            <a href="mailto:help@rarajob.com" class="bg-ccc footer-text"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10 px-0">
+        <hr>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+  <div class="container py-4 my-2">
+    <div class="row px-5">
+      <div class="col-md-4"></div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-9 text-right">
+            <a href="javascript:void(0)" class="bg-ccc footer-copyrights"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type='text/javascript'>
+  //<![CDATA[
+
+  // todo : 제목, 설명, 이미지주소, 도메인 구입 후 연결,
+  Kakao.init('8baa4caf5f5a8301b5b5295075d7e04a');
+  // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+  Kakao.Link.createDefaultButton({
+    container: '#kakao-link-btn',
+    objectType: 'feed',
+    content: {
+      title: '라라잡 | 숨은 일자리를 알려줄께',
+      description: '#잘나가는 #회사들의 #숨은 #일자리 #알려줌 #단기알바 #인턴 #핵꿀',
+      imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+      link: {
+        mobileWebUrl: 'http://rarajob.com',
+        webUrl: 'http://rarajob.com'
+      }
+    },
+    social: {
+      likeCount: 28600,
+      viewCount: 41550,
+      sharedCount: 18400
+    },
+    buttons: [
+      {
+        title: '자세히 알아보기',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com'
+        }
+      }
+    ]
+  });
+  //]]>
+</script>

@@ -1,0 +1,613 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.landing {
+    // in NavBar
+    .navbar {
+        padding: 1.5rem 1rem;
+        background-image: url(/references/rarajob_files/rarajob_desktop/source/header/bg.png);
+
+        .rarajob-logo {
+            background-image: url(/references/rarajob_files/rarajob_desktop/source/header/logo.png);
+            max-height: 22px;
+            min-width: 140px;
+        }
+
+        @media screen and (max-width: 768px) {
+            & {
+                background-image: url(/references/rarajob_files/rarajob_mobile/source/header/bg.png);
+
+                .container {
+                    text-align: center;
+                    margin: 4rem auto 2rem;
+
+                    .rarajob-logo {
+                        background-image: url(/references/rarajob_files/rarajob_desktop/source/header/logo.png);
+                        max-height: 22px;
+                        min-width: 140px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+    }
+
+    // in First Section
+    #brand-panel-pre {
+        background-image: url(/references/rarajob_files/rarajob_desktop/source/header/brands.png);
+        height: 245px;
+
+        @media screen and (max-width: 768px) {
+            & {
+                background-image: url(/references/rarajob_files/rarajob_mobile/source/header/brands.png);
+                height: 140px;
+            }
+        }
+    }
+
+    #sec-1 {
+        .left, .right {
+            height: 700px;
+        }
+        .left {
+            .title {
+                font-weight: 400;
+                line-height: 1.3;
+                background-image: url(/references/rarajob_files/rarajob_desktop/source/body1/text_1.png);
+                height: 90px;
+                width: 407px;
+                margin-top: 5rem !important;
+            }
+            .title-msg {
+                background-image: url(/references/rarajob_files/rarajob_desktop/source/body1/text_2.png);
+                height: 43px;
+                width: 236px;
+                margin-top: 2.7rem !important;
+            }
+
+            .button-group {
+                width: 100%;
+
+                & > a {
+                    width: 350px;
+                    height: 49px;
+                    display: block;
+                    margin: 0 0 15px;
+                }
+                .btn-for_undergraduate {
+                    background-image: url(/references/rarajob_files/rarajob_desktop/source/body1/button_1.png);
+                }
+                .btn-for_graduated {
+                    background-image: url(/references/rarajob_files/rarajob_desktop/source/body1/button_2.png);
+                }
+            }
+        }
+        .right {
+            position: relative;
+            & > .right-img {
+                background-image: url(/references/rarajob_files/rarajob_desktop/source/body1/phone.png);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: -100px;
+                right: 0;
+            }
+        }
+        .wave-img-mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 479px) {
+            & {
+                margin-bottom: -500px !important;
+            }
+            & .left {
+                .title {
+                    width: 330px !important;
+                    height: 75px !important;
+                }
+                .title-msg {
+                    height: 53px !important;
+                    width: 330px !important;
+                }
+                .button-group {
+                    & > a {
+                        width: 360px !important;
+                        height: 50px !important;
+                    }
+                }
+            }
+
+            & .right .right-img {
+                max-width: 335px !important;
+                height: 65% !important;
+                top: -250px !important;
+            }
+            & .wave-img-mobile {
+                top: -580px !important;
+                height: 150px !important;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            & {
+                margin-bottom: -250px;
+            }
+            & .left {
+                .title {
+                    background-image: url(/references/rarajob_files/rarajob_mobile/source/body1/text_1.png);
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 430px;
+                    height: 96px;
+                }
+                .title-msg {
+                    background-image: url(/references/rarajob_files/rarajob_mobile/source/body1/text_2.png);
+                    height: 69px;
+                    width: 430px;
+                    margin: 2.7rem auto !important;
+                }
+                .button-group {
+                    & > a {
+                        width: 460px;
+                        height: 64px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .btn-for_undergraduate {
+                        background-image: url(/references/rarajob_files/rarajob_mobile/source/body1/button_1.png);
+                    }
+                    .btn-for_graduated {
+                        background-image: url(/references/rarajob_files/rarajob_mobile/source/body1/button_2.png);
+                    }
+                }
+            }
+
+            & .right .right-img {
+                left: 0;
+                margin: auto;
+                max-width: 435px;
+                height: 85%;
+                top: -150px;
+            }
+
+            & .wave-img-mobile {
+                display: block;
+                top: -330px;
+                position: relative;
+                height: 250px;
+                width: 100%;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 919px) {
+            & .right .right-img {
+                min-width: 365px;
+                right: -25px;
+                height: 70%;
+                top: -40px;
+            }
+        }
+        @media (min-width: 920px) and (max-width: 991px) {
+            & .right .right-img {
+                min-width: 430px;
+                right: -100px;
+                height: 84%;
+                top: -59px;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            & .right .right-img {
+                min-width: 430px;
+                height: 94%;
+            }
+        }
+    }
+
+    #sec-2 {
+        .feature {
+            img {
+                height: 206px;
+            }
+            & > div {
+                width: 230px;
+                display: inline-block;
+
+                & > p {
+                    height: 20px;
+                    margin: 2rem auto;
+                    text-align: center;
+                }
+            }
+
+            &.left {
+                text-align: left;
+
+                img {  width: 230px;  }
+                p {
+                    width: 230px;
+                    background-image: url(/references/rarajob_files/rarajob_desktop/source/body2/vector_1_text.png);
+                }
+            }
+            &.center {
+                text-align: center;
+
+                img {  width: 202px;  }
+                p {
+                    width: 205px;
+                    background-image: url(/references/rarajob_files/rarajob_desktop/source/body2/vector_2_text.png);
+                }
+            }
+            &.right {
+                text-align: right;
+
+                img {
+                    width: 300px;
+                    height: 206px;
+                    padding: 24px;
+                }
+                & > div { width: 300px; }
+                p {
+                    width: 180px;
+                    background-image: url(/references/rarajob_files/rarajob_desktop/source/body2/vector_3_text.png);
+                }
+            }
+        }
+
+        .wave-img {
+            width: 100%;
+            margin: 5rem 0 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            & .feature {
+                margin-top: 5rem;
+
+                &.left, &.center, &.right {
+                    text-align: center !important;
+                    img {
+                        width: 260px;
+                        height: auto;
+                    }
+
+                    & > div {
+                        display: block;
+                        width: 260px;
+                        margin: auto;
+                        margin-top: 4rem;
+
+                        p {
+                            height: 23px;
+                            margin: 1.5rem auto 5rem;
+                        }
+                    }
+                }
+                &.left {
+                    & > div p {
+                        width: 260px;
+                        background-image: url(/references/rarajob_files/rarajob_mobile/source/body2/vector_1_text.png);
+                    }
+                }
+                &.center {
+                    & > div p {
+                        width: 230px;
+                        background-image: url(/references/rarajob_files/rarajob_mobile/source/body2/vector_2_text.png);
+                    }
+                }
+                &.right {
+                    img {
+                        padding: 0;
+                    }
+                    & > div p {
+                        margin-top: 0;
+                        width: 210px;
+                        background-image: url(/references/rarajob_files/rarajob_mobile/source/body2/vector_3_text.png);
+                    }
+                }
+            }
+            .wave-img {
+                display: none;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            & .feature {
+                &.left, &.center, &.right {
+                    img {
+                        width: 205px;
+                        height: 63%;
+                    }
+                }
+                &.left {
+                    img { width: 184px }
+                    & > div { width: 184px }
+                    & > div p {
+                        width: 184px;
+                        height: 16px;
+                        margin: 1.5rem 0;
+                    }
+                }
+                &.center {
+                    text-align: right;
+                    img { width: 162px }
+                    & > div { width: 162px }
+                    & > div p {
+                        width: 164px;
+                        height: 16px;
+                        margin: 1.5rem 0;
+                    }
+                }
+                &.right {
+                    img { width: 230px }
+                    & > div { width: 190px }
+                    & > div p {
+                        width: 150px;
+                        height: 16px;
+                        margin: 1.5rem auto;
+                    }
+                }
+            }
+        }
+    }
+
+    #sec-3 {
+        .kakao-img,
+        .kakao-text {
+            width: 100%;
+        }
+        .kakao-text-mobile {
+            display: none;
+        }
+        .bg-clock {
+            width: 100%;
+            height: 525px;
+            bottom: 0;
+            right: -310px;
+            z-index: -1;
+        }
+
+        .button-group {
+            padding: 0 5rem;
+
+            .btn-kakao {
+                height: 52px;
+                width: 100%;
+                display: inline-block;
+                margin: 5px 0;
+            }
+
+            .btn-kakao1 {
+                background-image: url(/references/rarajob_files/rarajob_desktop/source/body3/kakao_button_1.png)
+            }
+            .btn-kakao2 {
+                background-image: url(/references/rarajob_files/rarajob_desktop/source/body3/kakao_button_2.png)
+            }
+        }
+
+        @media screen and (max-width: 530px) {
+            & .kakao-text-mobile {
+                width: 86% !important;
+            }
+            & .button-group {
+                text-align: center !important;
+                .btn-kakao {
+                    height: 48px !important;
+                    width: 360px !important;
+                }
+            }
+        }
+        @media screen and (max-width: 768px) {
+            & .bg-clock {
+                display: none;
+            }
+            & .kakao-text {
+                display: none;
+            }
+            & .kakao-text-mobile {
+                display: block;
+                width: 60%;
+                margin: 0 auto 5rem;
+            }
+            & .button-group {
+                padding: 0;
+
+                .btn-kakao {
+                    height: 70px;
+                }
+
+                .btn-kakao1 {
+                    background-image: url(/references/rarajob_files/rarajob_mobile/source/body3/kakao_button_1.png)
+                }
+                .btn-kakao2 {
+                    background-image: url(/references/rarajob_files/rarajob_mobile/source/body3/kakao_button_2.png)
+                }
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            & .bg-clock {
+                width: 325px;
+                height: 350px;
+                right: -210px;
+            }
+            & .button-group {
+                padding: 0;
+
+                .btn-kakao {
+                    height: 45px;
+                }
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            & .button-group {
+                padding: 0;
+            }
+        }
+    }
+
+    footer {
+        background-image: url(/references/rarajob_files/rarajob_desktop/source/footer/footer_bg.png);
+
+        .footer-text {
+            background-image: url(/references/rarajob_files/rarajob_desktop/source/footer/footer_text.png);
+            display: inline-block;
+            width: 300px;
+            height: 15px;
+        }
+
+        hr {
+            border-top: 1px solid rgba(255,255,255,.125);
+        }
+
+        .footer-copyrights {
+            background-image: url(/references/rarajob_files/rarajob_desktop/source/footer/footer_copyrights.png);
+            display: inline-block;
+            width: 180px;
+            height: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            & .row.px-5 {
+                padding-left: 1% !important;
+                padding-right: 1% !important;
+            }
+            & .footer-text {
+                margin-top: 2rem;
+                float: left;
+                height: 17px;
+                width: 340px;
+                background-image: url(/references/rarajob_files/rarajob_mobile/source/footer/footer_text.png);
+            }
+            & .container:first-child {
+                padding-bottom: 1rem !important;
+            }
+            & .container:last-child {
+                padding-top: .1rem !important;
+
+                .text-right {
+                    text-align: left !important;
+
+                    .footer-copyrights {
+                        background-image: url(/references/rarajob_files/rarajob_mobile/source/footer/footer_copyrights.png);
+                        height: 15px;
+                        width: 215px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bg-ccc {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.c-pink {
+    color: #fe64a6 !important;
+}
+
+.f-10 {
+    font-size: 10px !important;
+}
+.f-11 {
+    font-size: 11px !important;
+}
+.f-12 {
+    font-size: 12px !important;
+}
+.f-13 {
+    font-size: 13px !important;
+}
+.f-14 {
+    font-size: 14px !important;
+}
+.f-15 {
+    font-size: 15px !important;
+}
+.f-16 {
+    font-size: 16px !important;
+}
+.f-17 {
+    font-size: 17px !important;
+}
+.f-18 {
+    font-size: 18px !important;
+}
+.f-19 {
+    font-size: 19px !important;
+}
+.f-20 {
+    font-size: 20px !important;
+}
+.f-21 {
+    font-size: 21px !important;
+}
+.f-22 {
+    font-size: 22px !important;
+}
+.f-23 {
+    font-size: 23px !important;
+}
+.f-24 {
+    font-size: 24px !important;
+}
+.f-25 {
+    font-size: 25px !important;
+}
+.f-26 {
+    font-size: 26px !important;
+}
+.f-27 {
+    font-size: 27px !important;
+}
+.f-28 {
+    font-size: 28px !important;
+}
+.f-29 {
+    font-size: 29px !important;
+}
+.f-30 {
+    font-size: 30px !important;
+}
+.f-31 {
+    font-size: 31px !important;
+}
+.f-32 {
+    font-size: 32px !important;
+}
+.f-33 {
+    font-size: 33px !important;
+}
+.f-34 {
+    font-size: 34px !important;
+}
+.f-35 {
+    font-size: 35px !important;
+}
+.f-36 {
+    font-size: 36px !important;
+}
+.f-37 {
+    font-size: 37px !important;
+}
+.f-38 {
+    font-size: 38px !important;
+}
+.f-39 {
+    font-size: 39px !important;
+}
+.f-40 {
+    font-size: 40px !important;
+}
+.f-41 {
+    font-size: 41px !important;
+}
+.f-42 {
+    font-size: 42px !important;
+}
+.f-43 {
+    font-size: 43px !important;
+}
+.f-44 {
+    font-size: 44px !important;
+}
