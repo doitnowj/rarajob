@@ -99,6 +99,39 @@ body.landing {
             display: none;
         }
 
+        @media screen and (max-width: 380px) {
+            & .container {
+                .left {
+                    p.title,
+                    p.title-msg {
+                        width: 290px !important;
+                    }
+                    p.title {
+                        height: 65px !important;
+                    }
+                    p.title-msg {
+                        height: 45px !important;
+                    }
+                    .button-group {
+                        & > a.bg-ccc {
+                            width: 290px !important;
+                            height: 40px !important;
+                        }
+                    }
+                }
+
+                .right .right-img {
+                    max-width: 290px !important;
+                    height: 56% !important;
+                    top: -220px !important;
+                }
+            }
+
+            & img.wave-img-mobile {
+                top: -580px !important;
+                height: 150px !important;
+            }
+        }
         @media screen and (max-width: 479px) {
             & {
                 margin-bottom: -500px !important;
@@ -383,6 +416,19 @@ body.landing {
             }
         }
 
+        @media screen and (max-width: 380px) {
+            & .container {
+                .button-group {
+                    & > .btn-kakao {
+                        height: 40px !important;
+                        width: 290px !important;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 380px) {
+
+        }
         @media screen and (max-width: 530px) {
             & .kakao-text-mobile {
                 width: 86% !important;
@@ -464,6 +510,14 @@ body.landing {
             height: 10px;
         }
 
+        @media screen and (max-width: 380px) {
+            & .container {
+                .footer-text {
+                    height: 14px !important;
+                    width: 290px !important;
+                }
+            }
+        }
         @media screen and (max-width: 768px) {
             & .row.px-5 {
                 padding-left: 1% !important;
