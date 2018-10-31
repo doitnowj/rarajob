@@ -82,11 +82,24 @@
   <script type="text/javascript" charset="utf-8">
     function copyToClipboard() {
       var $temp = $("<input>");
-      $("body").append($temp);
-      $temp.val(location.href).select();
-      document.execCommand("copy");
-      $temp.remove();
-      swal("링크를 복사했습니다!", '', 'success');
+      var url = location.href;
+
+      if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+        swal({
+          position: 'center',
+          type: 'warning',
+          title: '아이폰이신가요?',
+          text: '자동 복사가 지원되지 않는 기기입니다.\n주소창을 복사해주세요.',
+          showConfirmButton: false,
+          timer: 2500
+        })
+      } else {
+        $("body").append($temp);
+        $temp.val(url).select();
+        document.execCommand("copy");
+        $temp.remove();
+        swal("링크를 복사했습니다!", '', 'success');
+      }
     }
   </script>
   <div class="container">
